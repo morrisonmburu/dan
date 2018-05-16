@@ -16,4 +16,20 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+ $("#open").click(function(event){
+ 	event.preventDefault();
+ 	openNav();
+ })
+ $("#close").click(function(event){
+ 	event.preventDefault();
+  closeNav();
+ })
 }
